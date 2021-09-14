@@ -1,0 +1,27 @@
+<nav>
+  <div class="container d-flex align-items-center justify-content-space-between">
+    <div class="brand">
+      <img width="80px" src="../../../assets/image/controle-de-video-game.png" alt="Logo">
+    </div>
+    <h1 class="welcome">Seja bem vindo, {{userLogin}}.</h1>
+    <a (click)='exit()' class="exit d-flex align-items-center">
+      <span>Sair</span>
+      <img class="icon-exit" width="30px" src="../../../assets/image/exit.png" alt="Exit">
+    </a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="grid">
+    <div *ngFor='let user of userList' class="card">
+      <img class="userImage" width="150px" src="../../../assets/image/avatar.png" alt="user">
+      <p>Id: {{user.id}}</p>
+      <p>Nome: {{user.name}}</p>
+      <p>E-mail: {{user.email}}</p>
+      <p>Cidade: {{user.address.city}}</p>
+      <p>Compania: {{user.company.name}}</p>
+    </div>
+  </div>
+</div>
+
+

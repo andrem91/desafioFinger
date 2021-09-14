@@ -1,0 +1,44 @@
+.container {
+width: 100vw;
+height: 100vh;
+background: #6C7A89;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+form {
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-control {
+  margin: 10px 0;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
